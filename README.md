@@ -11,5 +11,5 @@ Implementing a cryptographic hash function properly is non-trivial as the algori
 ## Work done
 During the length of the project, only the pure hashing mode of BLAKE3 was implemented. While  the  project  implementation  hashes  any  length  inputs  to  any length outputs as intended, it does not give the same hash values as the original BLAKE3 algorithm, indicating possible issues in the security of the implementation.  Furthermore, the project implementation is roughly 1000 times slower than the original Rust implementation on small inputs (n < 1000),  and 10 000 times slower on large inputs (100 000 < n < 10 000 000).  This is due to a severe lack of optimization and the inherent slowness of a purely Python implementation.
 
-## Prject Author:
+## Project Author:
 Karl Hannes Veskus
